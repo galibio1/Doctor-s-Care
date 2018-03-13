@@ -1,0 +1,439 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: colossalis;
+	src: url("Colossalis Bold.ttf");
+}
+
+@media all and (min-width: 950px) {
+
+}
+
+
+
+.container{
+	margin: 0 auto;
+	width:950px;
+
+
+}
+
+body{
+	border-top: 8px solid #330066;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color:#D8D8D8 ;
+
+
+}
+
+
+h1,h2,h3, h4, h5, h6{
+	color: #006400;
+	font-family: colossalis, impact, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+.icons-ul {
+	padding-left: 0;
+}
+
+/********** logo ************/
+.logo {
+	float: left;
+	max-width: 50%;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.logo h2{
+	display: inline-block;
+	font-size: 3em;
+	margin-top: 0px;
+	padding-right: 5px;
+}
+
+.logo h3{
+	border-left:2px solid #a1a1a1;
+	display:inline-block;
+	color:#a1a1a1;
+	font:1.75em "Trebuchet MS", Tahoma, Arial, sans-serif;
+	padding-left: 10px;
+	position: relative;
+	top: -.2em
+}
+
+/************ Social media ************/
+.social {
+	float: right;
+	text-align: right;
+}
+
+.social ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.social ul li{
+	display: inline-block;
+}
+
+.social p {
+	margin: 10px 0 2px 0;
+	font-size: .85em;
+}
+
+.social ul li a i{
+	color: #a1a1a1;
+	font-size: 2.5em;
+	text-decoration: none;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+}
+
+.social a:hover i.icon-facebook-sign {
+	color: #3B5998;
+}
+
+.social a:hover i.icon-twitter-sign {
+	color: #4099ff;
+}
+
+.social a:hover i.icon-google-plus-sign {
+	color: #d34836;
+}
+.social a:hover i.icon-youtube-sign {
+	color: #ff3333;
+}
+
+/************ Navigation ***********/
+
+nav {
+	border: 1px solid #ccc;
+	clear: both;
+	width: 958px;
+	height: 45px;
+
+}
+
+.navMenu {
+	margin:0px;
+	padding:0px;
+}
+
+.navMenu ul{
+	margin:0px;
+	padding:0px;
+	line-height:42px;
+}
+
+.navMenu li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	position:relative;
+	background:#eee;
+}
+
+.navMenu ul li a{
+	text-align:center;
+	font-family:"Comic Sans MS", curaive;
+	text-decoration:none;
+	height:43px;
+	width:129px;
+	display:block;
+	color: #000;
+	border:1px solid #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.navMenu ul ul{
+	position:absolute;
+	visibility:hidden;
+	top:45px;
+}
+
+.navMenu ul li:hover ul{
+	visibility:visible;
+
+}
+
+.navMenu li:hover{
+	background:#1094CD;
+
+}
+
+.navMenu ul li:hover ul li a:hover{
+	background:#CCC;
+	color:#FFFFFF;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+}
+
+.navMenu a:hover{
+	color:#FFFFFF;
+}
+
+
+.clearFloat{
+	clear:both;
+	margin:0;
+	padding:0;
+}
+
+.search {
+	color: #a1a1a1;
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+.search input {
+	border: 1px solid #a1a1a1;
+	background-color: #eee;
+	border-radius: 30px;
+	padding-left: 8px;
+}
+
+.search a {
+	color: #a1a1a1;
+	text-decoration: none;
+}
+
+/************ Content Slider ***********/
+.slider {
+	background: #eee url('../img/f6167730e9b2b7434d5c00f897700464.jpg') no-repeat;
+	width: 960px;
+	height: 325px;
+	margin-top: 20px;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+
+}
+
+.slider-prev, .slider-next {
+	color: #FFFFFF;
+	font-size: 40px;
+	text-decoration: none;
+	opacity: .8;
+	position: absolute;
+	top: 150px;
+	transition: opacity .5s;
+}
+
+.slider-prev:hover, .slider-next:hover {
+	opacity: 1;
+}
+
+
+
+.slide-content {
+	width: 100%;
+	right: 50px;
+
+}
+
+.slider-title {
+	color: #6A5ACD;
+	font: 50px "Arial Black", Gadget, sans-serif;
+	text-shadow: 2px 2px 2px #000;
+	line-height: 50px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 20em;
+	animation: type 8s infinite;
+
+}
+
+
+
+.slider-title span{
+	color: 	#2E8B57;
+	font-size: 30px;
+	font-weight: bold;
+	animation: type2 1s infinite;
+}
+
+
+@keyframes type{
+
+     50%{width: 0;}
+  100%{ width: 100; }
+}
+
+
+@keyframes type2{
+
+}
+
+
+.slider-buttn{
+
+
+	background-color: #4682B4;
+	color: black;
+	display: inline-block;
+	font-size: 14.5px;
+	padding: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100px;
+	height: 20px;
+	opacity: .7;
+	transition: opacity 1s;
+	margin-left: 45%;
+	margin-top: 50px;
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: 2px 2px 2px black;
+}
+
+.slider-buttn:hover{
+	background: #26AAC4;
+	opacity: 1;
+	box-shadow: 0px 0px 0px;
+}
+
+
+.column-one-third, .column-two-third {
+
+	margin-right: 24px;
+	padding: 0;
+	float: left;
+
+}
+
+.column-one-third:last-child, .column-two-third:last-child {
+	margin-right: 0;
+}
+
+.column-one-third {
+	width: 300px;
+	margin-left: 3px;
+}
+
+.column-two-third {
+	width: 622px;
+	margin-right: 20px;
+}
+
+/************** 4 COLLUMN SETUP **********/
+.meet-the-team {
+	padding-top:20px;
+	margin-bottom: 2px;
+}
+
+.column-one-fourth {
+	border: 1px solid #ddd;
+	border-left: none;
+	padding:10px;
+	width: 216.25px;
+	float: left;
+}
+
+.column-one-fourth:first-child {
+	border-left: 1px solid #ddd;
+}
+
+/********** MEET THE TEAM ***********/
+.image-container{
+	position: relative;
+	height: 160px;
+}
+
+.image-caption {
+	background-color: #000;
+	color: #fff;
+	opacity: .5;
+	padding: 2px .10px;
+	width:220px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/********** footer ***********/
+footer {
+	background-color: #258FB6;
+	border-top: 8px solid #330066;
+	margin-top:20px;
+	width:100%;
+
+
+}
+
+.footer-row {
+	width: 960px;
+	margin: 0 auto;
+}
+
+footer h3{
+	color: #fff;
+	font: 1.4em "Trebuchet MS", Tahoma, Arial,sans-serif;
+	margin: 10px;
+}
+
+.thumbnails{
+	list-style-type:none;
+	margin: 0;
+	padding:0;
+}
+
+.thumbnails li {
+	float: left;
+	margin-right: 8px;
+}
+
+.copyright {
+	border-top:1px solid #888;
+	font-size: 12px;
+	text-align: center;
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+
+}
+/********** CLEARFIX ************/
+
+.clearfix:after {
+
+    content: ".";
+
+    display: block;
+
+    clear: both;
+
+    visibility: hidden;
+
+    line-height: 0;
+
+    height: 0;
+}
+
+
+.clearfix {
+
+    display: inline-block;
+}
+
+
+html[xmlns] .clearfix {
+
+    display: block;
+}
+
+
+* html .clearfix {
+
+    height: 1%;
+}
